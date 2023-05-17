@@ -1,0 +1,29 @@
+.textbox {
+  margin: 24px 0;
+  font-family: 'Montserrat';
+}
+
+.textbox label {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.textbox input {
+  height: 80px;
+  width: 100%;
+  font-size: 18px;
+  outline: none;
+  border: none;
+  padding: 12px 20px;
+  margin: 10px 0 20px 0;
+  box-sizing: border-box;
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.textbox input::placeholder {
+  color: #A4A4A4;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: 'Montserrat';
+}
+

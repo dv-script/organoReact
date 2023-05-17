@@ -1,0 +1,13 @@
+.form {
+  background: #F7F7F7;
+  box-shadow: 7px 7px 15px rgba(0, 0, 0, 0.08);
+  border-radius: 20px;
+  padding: 33px 96px;
+  margin: 80px;
+}
+
+.form__title {
+  font-family: 'Prata';
+  font-weight: 400;
+  font-size: 32px;
+}
