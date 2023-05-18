@@ -1,14 +1,15 @@
-.textbox {
-  margin: 24px 0;
+.dropdown {
+  display: flex;
+  flex-direction: column;
+}
+
+.dropdown label {
+  font-weight: 600;
+  font-size: 18px;
   font-family: 'Montserrat';
 }
 
-.textbox label {
-  font-weight: 600;
-  font-size: 18px;
-}
-
-.textbox input {
+.dropdown select {
   height: 80px;
   width: 100%;
   outline: none;
@@ -19,10 +20,9 @@
   box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.08);
 }
 
-.textbox input::placeholder {
+select {
   color: #A4A4A4;
   font-size: 16px;
   font-weight: 400;
   font-family: 'Montserrat';
 }
-
