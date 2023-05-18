@@ -22,7 +22,7 @@ function DropDown(data) {
 				</option>
 
 				{data.teams.map((object) => (
-					<option key={object.id}>{object.team}</option>
+					<option key={object.id}>{object.teamName}</option>
 				))}
 
 			</select>
