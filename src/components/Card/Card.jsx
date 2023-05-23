@@ -6,7 +6,7 @@ function Card(data) {
 	return (
 		<section className="card">
 
-			<div className="card__top">
+			<div className="card__top" style={{ backgroundColor: data.primaryColor}}>
 				<img src={data.image} alt={data.name} />
 			</div>
 

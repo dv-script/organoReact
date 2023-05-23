@@ -1,10 +1,10 @@
 import React from 'react';
 
-import './Button.css';
+import './CreateCard.css';
 
 function Button(data) {
 	return (
-		<button className="button">
+		<button className="createCardButton">
 			{data.children}
 		</button>
 	);

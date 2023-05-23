@@ -1,0 +1,19 @@
+.teamContent {
+  margin: 0 80px 80px 80px;
+  position: relative;
+  font-family: 'Prata';
+  font-weight: 400;
+  font-size: 32px;
+  text-align: center;
+
+}
+
+.teamContent h3 {
+  text-align: center;
+  font-weight: 400;
+  font-size: 40px;
+  color: #6278F7;
+  border-bottom: 4px solid;
+  display: inline-block;
+  padding: 8px;
+}

@@ -1,0 +1,15 @@
+.toggleFormButton {
+  position: absolute;
+  padding: 32px;
+  outline: none;
+  border: none;
+  border-radius: 50%;
+  background: #6278F7;
+  cursor: pointer;
+  top: 50px;
+  right: 0;
+}
+
+.Button:hover {
+  color: #cde3ff;
+}

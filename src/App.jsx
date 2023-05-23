@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 
 import Banner from './components/Banner/Banner';
+import Header from './components/Header/Header';
 import Form from './components/Form/Form';
 import Team from './components/Team/Team';
+import Footer from './components/Footer/Footer';
 
 function App() {
 
@@ -61,17 +63,22 @@ function App() {
 				teams={teams} 
 				newPerson={person => addNewPerson(person)}
 			/>
+						
+			<Header>
+					My Organization:
+			</Header>
 
-			{teams.map( team => 
+			{teams.map( (team, index) => 
 				<Team 
-					key={team.id}
+					key={index}
 					title={team.teamName}
 					primaryColor={team.primaryColor}
 					secundaryColor={team.secundaryColor}
-					persons={persons}
+					persons={persons.filter( person => person.team === team.teamName )}
 				/>
 			)}
 
+			<Footer />
 		</>
 	);
 }

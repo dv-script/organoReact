@@ -2,24 +2,36 @@ import React, { useState } from 'react';
 
 import './Form.css';
 import TextBox from '../TextBox/TextBox';
-import Button from '../Button/Button';
+import CreateCard from '../Buttons/CreateCard/CreateCard';
 import DropDown from '../DropDown/DropDown';
 
 function Form(data) {
 
+	const [id, setId] = useState(0);
 	const [name, setName] = useState('');
 	const [position, setPosition] = useState('');
 	const [image, setImage] = useState('');
 	const [team, setTeam] = useState('');
 
+	function handleSetId(id) {
+		setId(id += 1);
+	}
+
 	function submitForm(event) {
 		event.preventDefault();
+		handleSetId(id);
 		data.newPerson({
+			id,
 			name,
 			position,
 			image,
 			team
 		});
+		setName('');
+		setImage('');
+		setId('');
+		setPosition('');
+		setTeam('');
 	}
 
 	return (
@@ -61,7 +73,7 @@ function Form(data) {
 					required={true}
 					teams={data.teams}/>
 
-				<Button>Create Card</Button>
+				<CreateCard>Create Card</CreateCard>
 
 			</form>
 
